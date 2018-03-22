@@ -3,7 +3,7 @@ title = "Linux process and thread"
 
 date = 2015-07-11
 lastmod = 2015-07-11
-draft = true
+draft = false
 
 tags = ["system","linux"]
 summary = "Linux Threads vs Light Weight Processes."

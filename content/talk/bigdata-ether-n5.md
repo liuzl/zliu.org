@@ -1,14 +1,14 @@
 +++
 date = 2017-01-01T00:00:00  # Schedule page publish date.
 
-title = "Example Talk"
-time_start = 2030-06-01T13:00:00
-time_end = 2030-06-01T15:00:00
+title = "大数据的“能”与“不能”"
+time_start = 2016-01-24T13:30:00
+time_end = 2016-01-24T16:30:00
 abstract = ""
 abstract_short = ""
-event = "Academic Theme Conference"
-event_url = "https://example.org"
-location = "London, United Kingdom"
+event = "[以太资本](https://www.ethercap.com/)、[五岳天下](http://www.n5capital.com/)、投资人说"
+event_url = "http://www.sohu.com/a/59622414_334662"
+location = "北京 中关村 Wepac空间"
 
 # Is this a selected talk? (true/false)
 selected = false
@@ -16,11 +16,11 @@ selected = false
 # Projects (optional).
 #   Associate this talk with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-projects = ["deep-learning"]
+#projects = ["deep-learning"]
 
 # Links (optional).
 url_pdf = ""
-url_slides = ""
+url_slides = "/files/talks/bigdata-2016.pdf"
 url_video = ""
 url_code = ""
 
@@ -38,4 +38,3 @@ caption = "My caption :smile:"
 
 +++
 
-Embed your slides or video here using [shortcodes](https://sourcethemes.com/academic/post/writing-markdown-latex/). Further details can easily be added using *Markdown* and $\rm \LaTeX$ math code.
