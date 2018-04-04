@@ -26,6 +26,8 @@ math = false
 #image = "headers/bubbles-wide.jpg"
 #caption = "My caption :smile:"
 
+highlight_languages = ["go"]
+
 +++
 
 ## Introduction 介紹
