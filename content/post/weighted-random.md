@@ -10,9 +10,9 @@ highlight_languages = ["go"]
 tags = ["algorithm", "sampling", "alias method", "weighted random"]
 summary = "The optimal solution for weighted random should be the [Alias Method](https://en.wikipedia.org/wiki/Alias_method). It requires $O(n)$ time to initialize, $O(1)$ time to make a selection, and $O(n)$ memory."
 
+[header]
+image = "random_post_img.png"
 +++
-
-![png](/img/random_post_img.png)
 
 ## Introduction
 
