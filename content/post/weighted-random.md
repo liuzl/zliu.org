@@ -20,13 +20,13 @@ First of all what is weighted random? Let's say you have a list of items and you
 
 ## Scenarios
 
-There are lots of real world scenarios that need weighted random. Such as load balancers(like [nginx](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/), haproxy etc). Following is an example configuration of nginx. In the example, `backend1.example.com` has weight `5`; the other two servers have the default weight `1`, With this configuration of weights, out of every seven requests, five are sent to `backend1.example.com` and one to `backend2.example.com` one to `backend3.example.com`.
+There are lots of real world scenarios that need weighted random. Such as load balancers(like [nginx](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/), haproxy etc). Following is an example configuration of nginx. In the example, `backend1` has weight `5`; the other two servers have the default weight `1`, With this configuration of weights, out of every seven requests, five are sent to `backend1` and one to `backend2` one to `backend3`.
 ```nginx
 http {
     upstream backend {
-        server backend1.example.com weight=5;
-        server backend2.example.com;
-        server backend3.example.com;
+        server backend1 weight=5;
+        server backend2;
+        server backend3;
     }
 }
 ```
