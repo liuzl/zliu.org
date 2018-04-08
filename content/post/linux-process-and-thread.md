@@ -5,7 +5,7 @@ date = 2015-07-11
 lastmod = 2015-07-11
 draft = false
 
-tags = ["system","linux"]
+tags = ["System"]
 summary = "Linux Threads vs Light Weight Processes."
 
 +++

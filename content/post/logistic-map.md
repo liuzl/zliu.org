@@ -6,7 +6,7 @@ lastmod = 2017-06-16
 math = true
 draft = false
 
-tags = ["ai","logistic map", "chaos"]
+tags = ["Mathematics", "Programming", "Philosophy"]
 summary = "A Python implementation for illustrating the behavior of logistic map."
 
 +++

@@ -13,7 +13,7 @@ image_preview = "bubbles.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["nlp", "nlu", "semantic parsing"]
+tags = ["NLP", "NLU", "Semantic"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = "https://github.com/liuzl/fmr"
