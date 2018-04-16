@@ -2,7 +2,7 @@
 title = "Weighted Random: algorithms for sampling from discrete probability distributions"
 
 date = 2018-04-05
-lastmod = 2018-04-06
+lastmod = 2018-04-16
 math = true
 draft = false
 highlight_languages = ["go"]
@@ -83,7 +83,7 @@ In `word2vec`, this solution is adopted.
 
 ### Solution 2
 
-The first solution takes too much memory, then came solution 2: Compute the discrete cumulative density function (CDF) of the list -- or in simple terms the array of cumulative sums of the weights. Then generate a random number in the range between 0 and the sum of all weights, do a linear search to find this random number in your discrete CDF array and get the value corresponding to this entry -- this is the weighted random number. Binary search could reduce the time complexity from $O(n)$ to $O(log(n))$.
+The first solution takes too much memory, then came solution 2: Compute the discrete cumulative density function (CDF) of the list -- or in simple terms the array of cumulative sums of the weights. Then generate a random number in the range between 0 and the sum of all weights, do a linear search to find this random number in your discrete CDF array and get the value corresponding to this entry -- this is the weighted random number.
 ```go
 func WeightedRandomS2(weights []float32) int {
     if len(weights) == 0 {
@@ -106,6 +106,42 @@ func WeightedRandomS2(weights []float32) int {
 I used this solution in the scheduler of [crawling framework](https://github.com/crawlerclub/x).
 
 ### Solution 3
+
+Adopting binary search over the CDF array could reduce the time complexity from $O(n)$ to $O(log(n))$.
+```go
+func WeightedRandomS3(weights []float32) int {
+    n := len(weights)
+    if n == 0 {
+        return 0
+    }
+    cdf := make([]float32, n)
+    var sum float32 = 0.0
+    for i, w := range weights {
+        if i > 0 {
+            cdf[i] = cdf[i-1] + w
+        } else {
+            cdf[i] = w
+        }
+        sum += w
+    }
+    r := rand.Float32() * sum
+    var l, h int = 0, n - 1
+    for l <= h {
+        m := l + (h-l)/2
+        if r <= cdf[m] {
+            if m == 0 || (m > 0 && r > cdf[m-1]) {
+                return m
+            }
+            h = m - 1
+        } else {
+            l = m + 1
+        }
+    }
+    return -1
+}
+```
+
+### Solution 4
 
 The optimal solution for weighted random should be the [Alias Method](https://en.wikipedia.org/wiki/Alias_method). It requires $O(n)$ time to initialize, $O(1)$ time to make a selection, and $O(n)$ memory. A golang version implementation is [here](https://github.com/liuzl/alias).
 
