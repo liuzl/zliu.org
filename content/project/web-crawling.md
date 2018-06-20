@@ -16,7 +16,7 @@ image_preview = "bubbles.jpg"
 tags = ["Crawler", "Information Extraction"]
 
 # Optional external URL for project (replaces project detail page).
-external_link = "https://github.com/crawlerclub/x"
+external_link = "https://github.com/crawlerclub/crawler"
 
 # Does the project detail page use math formatting?
 math = false
