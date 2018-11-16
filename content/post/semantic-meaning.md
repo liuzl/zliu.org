@@ -6,9 +6,13 @@ lastmod = 2018-11-15
 draft = false
 
 tags = ["NLP", "NLU", "Semantic", "Meaning"]
-summary = "I found a very worthwhile article while surfing medium.com days ago. The article is a summary of a twiiter thread which talked about meaning, semantics, language models, learning Thai and Java, entailment, co-reference — all in one fascinating thread. The original article is [here](https://medium.com/huggingface/learning-meaning-in-natural-language-processing-the-semantics-mega-thread-9c0332dfe28e)."
+summary = "I found a very worthwhile article while surfing medium.com days ago. The article is a summary of a twitter thread which talked about meaning, semantics, language models, learning Thai and Java, entailment, co-reference — all in one fascinating thread. The original article is [here](https://medium.com/huggingface/learning-meaning-in-natural-language-processing-the-semantics-mega-thread-9c0332dfe28e)."
 
 +++
+
+I found a very worthwhile article while surfing medium.com days ago. The article is a summary of a twitter thread which talked about meaning, semantics, language models, learning Thai and Java, entailment, co-reference — all in one fascinating thread. The original article is [here](https://medium.com/huggingface/learning-meaning-in-natural-language-processing-the-semantics-mega-thread-9c0332dfe28e).
+
+Following is a copy of the original article:
 
 Last week [a tweet by Jacob Andreas](https://twitter.com/jacobandreas/status/1023246560082063366) triggered a huge discussion on Twitter that many people have called the *meaning/semantics mega-thread*.
 
@@ -28,9 +32,11 @@ Well there are several reasons we may want to distinguish meaning from raw text.
 
 One reason is that the field of NLP/NLU aims at **building systems** that understand what you say to them, trigger actions based on that and convey back meaningful information. Let’s take a simple example:
 
-* Context: Knowledge of mathematics
-* Utterance: *What is the largest prime less than 10?*
-* Action: `7`
+```
+Context: Knowledge of mathematics
+Utterance: What is the largest prime less than 10?
+Action: 7
+```
 
 Given some knowledge of math, we want our NLU system to produce an appropriate answer.
 
@@ -38,9 +44,9 @@ It’s difficult to (i) link raw text to a knowledge base of mathematical facts 
 
 For example in our case:
 
-```
-Meaning representation: 𝑚𝑎𝑥(𝚙𝚛𝚒𝚖𝚎𝚜 ∩(−∞; 𝟣𝟢))
-```
+$$
+Meaning Representation = max(primes \cap (-\infty, 10))
+$$
 
 We can then execute this expression with respect to a model of the world, like our database of knowledge, to get an answer. This way, we have also factored out the understanding of language (called *semantic parsing*) from the world knowledge (the problem of grounding meaning of in the real word).
 
@@ -139,4 +145,4 @@ In the end, I feel like the main original question stayed open: can a model lear
 
 Searle’s argument was made in the Strong versus Weak AI debate: does the computer has a mind or consciousness. Here the question is less philosophical: can we extract a representation of meaning from form alone.
 
-Still, [as Jeremy Howard detailed a bit later](https://twitter.com/jeremyphoward/status/1026881686359822337), the Chinese room experiment of Searle goes far beyond the question of Strong/weak AI to the question of understanding/qualia, so please go [check this thread](https://twitter.com/jeremyphoward/status/1026881686359822337).
+Still, [as Jeremy Howard detailed a bit later](https://twitter.com/jeremyphoward/status/1026881686359822337), the Chinese room experiment of Searle goes far beyond the question of strong/weak AI to the question of understanding/qualia, so please go [check this thread](https://twitter.com/jeremyphoward/status/1026881686359822337).
