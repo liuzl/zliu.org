@@ -45,7 +45,7 @@ It’s difficult to (i) link raw text to a knowledge base of mathematical facts 
 For example in our case:
 
 $$
-Meaning Representation = max(primes \cap (-\infty, 10))
+Meaning = max(primes \cap (-\infty, 10))
 $$
 
 We can then execute this expression with respect to a model of the world, like our database of knowledge, to get an answer. This way, we have also factored out the understanding of language (called *semantic parsing*) from the world knowledge (the problem of grounding meaning of in the real word).
