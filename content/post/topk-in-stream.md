@@ -2,7 +2,7 @@
 title = "Filtered-Space Saving Top-K"
 
 date = 2018-06-25
-lastmod = 2018-06-25
+lastmod = 2019-07-23
 draft = false
 
 tags = ["Algorithm"]
@@ -17,6 +17,8 @@ The Space-Saving algorithm will keep in the list all the elements that may have 
 [Filtered-Space Saving](http://www.l2f.inesc-id.pt/~fmmb/wiki/uploads/Work/dict.refd.pdf) (FSS), that uses a filtering approach to improve on Space-Saving is a data structure and algorithm combination useful for accurately estimating the top k most frequent values appearing in a stream while using a constant, minimal memory footprint. The obvious approach to computing top-k is to simply keep a table of values and their associated frequencies, which is not practical for streams.
 
 Instead, FSS works by hashing incoming values into buckets, where each bucket has a collection of values already added. If the incoming element already exists at a given bucket, its frequency is incremented. If the element doesn’t exist, it will be added as long as a few certain configurable conditions are met.
+
+A golang version implementation of FSS is [here](https://github.com/liuzl/topk).
 
 ## References
 
