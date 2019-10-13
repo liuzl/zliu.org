@@ -55,17 +55,18 @@ defaultContentLanguageInSubdir = false
 
   # Your details.
   name = "Zhanliang Liu"
-  role = "Principle Engineer"
+  role = "Vice President of Technology"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Baidu, Inc", url = "https://www.baidu.com" } ]
+  organizations = [ { name = "Elensdata, Inc", url = "https://www.elensdata.com/" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   # avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   avatar = "zliu.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "liang@zliu.org"
-  address = "Baidu Technology Park, No.10 Xibeiwang East Road, Haidian District, Beijing, China"
+  #address = "Baidu Technology Park, No.10 Xibeiwang East Road, Haidian District, Beijing, China"
+  address = "25 Floor of Internet Finance Center, No. 1 Danling Street, Haidian District, Beijing, China"
   # office_hours = "Monday 10:00 to 13:00 or email for appointment"
   # phone = "888 888 88 88"
   # skype = "echo123"
