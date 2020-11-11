@@ -33,7 +33,7 @@ highlight = true
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "aiprocon2020.jpeg"
+#image = "aiprocon2020.jpeg"
 caption = "Research :smile:"
 
 +++
