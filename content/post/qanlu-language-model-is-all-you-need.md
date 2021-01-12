@@ -1,5 +1,5 @@
 +++
-title = "Language Model Is All You Need — Explores NLU as QA"
+title = "Language Model Is All You Need — Explores NLU as MRC QA"
 
 date = 2021-01-12
 lastmod = 2021-01-12
