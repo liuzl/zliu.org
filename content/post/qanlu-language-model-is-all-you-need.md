@@ -6,7 +6,7 @@ lastmod = 2021-01-12
 draft = false
 
 tags = ["NLP", "NLU", "QA", "Language Model", "QANLU"]
-summary = "One Amazon Alexa AI's new paper *Language Model Is All You Need* explores NLU problem as a QA problem. The original paper is on [axXiv](https://arxiv.org/abs/2011.03023)."
+summary = "One Amazon Alexa AI's new paper *Language Model Is All You Need* explores NLU problem as a QA problem. The original paper is on [arXiv](https://arxiv.org/abs/2011.03023)."
 
 +++
 
@@ -26,6 +26,6 @@ The researchers conducted experiments on the ATIS and Restaurants-8k datasets, w
 
 The researchers say future directions could include expanding beyond this configuration and across different NLP problems, measuring the transfer of knowledge across different NLP tasks, and studying how QANLU questions might be generated automatically based on context.
 
-The paper *Language Model Is All You Need: Natural Language Understanding as Question Answering* is on [axXiv](https://arxiv.org/pdf/2011.03023.pdf).
+The paper *Language Model Is All You Need: Natural Language Understanding as Question Answering* is on [arXiv](https://arxiv.org/pdf/2011.03023.pdf).
 
 
