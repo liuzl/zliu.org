@@ -2,7 +2,7 @@
 title = "Vector Search Engine"
 
 date = 2022-03-01
-lastmod = 2022-03-01
+lastmod = 2022-03-02
 draft = false
 
 tags = ["Vector", "Search Engine", "Database", "Information Retrieval"]
@@ -46,10 +46,11 @@ todo
 ## References
 
 1. Facebook. [A library for efficient similarity search and clustering of dense vectors.](https://github.com/facebookresearch/faiss), Feb 19, 2017.
-2. Zilliz. [An open-source vector database for scalable similarity search and AI applications.](https://github.com/milvus-io/milvus), Mar 17, 2019.
-3. Microsoft. [A distributed approximate nearest neighborhood search (ANN) library which provides a high quality vector index build, search and distributed online serving toolkits for large scale vector search scenario.](https://github.com/microsoft/SPTAG), Sep 9, 2018.
-4. Semi-technologies. [Weaviate is a cloud-native, modular, real-time vector search engine](https://github.com/semi-technologies/weaviate), Mar 27, 2016.
-5. Qdrant. [Vector similarity search engine with extended filtering support](https://github.com/qdrant/qdrant), May 24, 2020.
-6. Pinecone. [Vector Database for Similarity Search](https://www.pinecone.io/), Apr 18, 2021.
-7. Vald. [A Highly Scalable Distributed Vector Search Engine](https://github.com/vdaas/vald), Aug 25, 2019.
+2. Y.Malkov. [Header-only C++/python library for fast approximate nearest neighbors](https://github.com/nmslib/hnswlib), Jul 2, 2017.
+3. Zilliz. [An open-source vector database for scalable similarity search and AI applications.](https://github.com/milvus-io/milvus), Mar 17, 2019.
+4. Microsoft. [Space Partition Tree And Graph](https://github.com/microsoft/SPTAG), Sep 9, 2018.
+5. Semi-technologies. [Weaviate is a cloud-native, modular, real-time vector search engine](https://github.com/semi-technologies/weaviate), Mar 27, 2016.
+6. Qdrant. [Vector similarity search engine with extended filtering support](https://github.com/qdrant/qdrant), May 24, 2020.
+7. Pinecone. [Vector Database for Similarity Search](https://www.pinecone.io/), Apr 18, 2021.
+8. Vald. [A Highly Scalable Distributed Vector Search Engine](https://github.com/vdaas/vald), Aug 25, 2019.
 
